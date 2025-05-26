@@ -46,7 +46,7 @@ def new_cotization():
     'date': date,
     'client': client,
     'mail': mail,
-    'service': service,
+    'service': service.capitalize(),
     'description': description
   }
 
