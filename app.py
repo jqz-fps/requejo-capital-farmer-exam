@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from datetime import datetime
 
 app = Flask(__name__)
@@ -12,7 +12,7 @@ services = [
 
 @app.route('/')
 def index():
-  return jsonify(cotizations)
+  return render_template('index.html')
 
 @app.route('/api/cotization', methods=['POST'])
 def new_cotization():
@@ -51,7 +51,7 @@ def new_cotization():
   }
 
   cotizations.append(final_cotization)
-  return jsonify(final_cotization)
+  return jsonify(final_cotization), 201
 
 if __name__ == '__main__':
   app.run(debug=True)
