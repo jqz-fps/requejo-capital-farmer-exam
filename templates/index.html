@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Cotizaciones Legales</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <h1>Sistema de Cotizaciones Legales</h1>
+  <h3>Ingrese sus datos para enviar una cotización</h3>
+  <form>
+    <label for="client">Cliente:</label>
+    <input type="text" id="client" name="client">
+    <label for="mail">Mail:</label>
+    <input type="text" id="mail" name="mail">
+    <label for="description">Descripción:</label>
+    <textarea id="description" name="description"></textarea>
+    <label for="service">Servicio:</label>
+    <select id="service" name="service">
+      <option value="constitución de empresa">Constitución de Empresa</option>
+      <option value="defensa laboral">Defensa Laboral</option>
+      <option value="consultoría tributaria">Consultoría Tributaria</option>
+    </select>
+    <button>Enviar</button>
+  </form>
+  <div id="cotization">
+    <h3>Cotizacion Recibida:</h3>
+    <span>Nº de cotización:</span>
+    <span id="cotization-number"></span><br>
+    <span>Cliente:</span>
+    <span id="client-cotization"></span><br>
+    <span>Mail:</span>
+    <span id="mail-cotization"></span><br>
+    <span>Descripción:</span>
+    <span id="description-cotization"></span><br>
+    <span>Servicio:</span>
+    <span id="service-cotization"></span><br>
+    <span>Precio:</span>
+    <span id="price-cotization"></span><br>
+    <span>Fecha:</span>
+    <span id="date-cotization"></span><br>
+    <button id="back-button">Volver</button>
+  </div>
+</body>
+</html>
