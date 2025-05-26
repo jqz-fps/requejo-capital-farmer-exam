@@ -4,7 +4,7 @@
 1. Clone el repositorio
 2. pip install -r requirements.txt
 3. python app.py
-> ![IMPORTANT]
+> [!IMPORTANT]
 > Este proyecto utiliza la API de Gemini para realizar el analisis de la descripción de la cotización. Para poder utilizar esta funcionalidad, es necesario tener una cuenta de Google Cloud Platform y crear una API Key de la plataforma.
 
 ## Uso
