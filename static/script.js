@@ -42,6 +42,7 @@ function load_cotization(cotization) {
   document.querySelector('#service-cotization').innerText = cotization.service;
   document.querySelector('#price-cotization').innerText = cotization.price;
   document.querySelector('#date-cotization').innerText = cotization.date;
+  document.querySelector('#ai-response-cotization').innerText = cotization.ai_response;
 }
 
 document.querySelector('#back-button').addEventListener('click', () => {
